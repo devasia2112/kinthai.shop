@@ -1,1 +1,269 @@
-coming soon
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Chef Solutions & Gourmet Products</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #FFF;
+            color: #212529;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 40px 0;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .logo-image {
+            /*width: 60px;*/
+            height: 60px;
+            object-fit: contain;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ff0101;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #212529;
+            opacity: 0.8;
+            font-style: italic;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .product-card {
+            background: #FFF;
+            border: 2px solid #f8f9fa;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(33, 37, 41, 0.1);
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(33, 37, 41, 0.15);
+            border-color: #ff0101;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: #dee2e6;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-image::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent 30%, rgba(255, 1, 1, 0.1) 50%, transparent 70%);
+        }
+
+        .product-info {
+            padding: 25px;
+        }
+
+        .product-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #212529;
+            margin-bottom: 10px;
+        }
+
+        .product-description {
+            color: #212529;
+            opacity: 0.8;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+        .product-price {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #ff0101;
+            margin-bottom: 20px;
+        }
+
+        .shop-link {
+            display: inline-block;
+            background-color: #ff0101;
+            color: #FFF;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 0.9rem;
+        }
+
+        .shop-link:hover {
+            background-color: #dc0000;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 1, 1, 0.3);
+        }
+
+        .shop-link:active {
+            transform: translateY(0);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid #e9ecef;
+            margin-top: 50px;
+        }
+
+        .footer p {
+            color: #212529;
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: #ff0101;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #dc0000;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .logo {
+                font-size: 2rem;
+            }
+            
+            .products-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .product-info {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <img src="kinthai-private-chef-logo.png" alt="Logo" class="logo-image">
+                <div class="logo">Private Chef Solutions</div>
+            </div>
+            <div class="subtitle">Premium Gourmet Products & Private Chef Services</div>
+        </header>
+
+        <div class="products-grid">
+
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image"><img src="assets/img/signature-dinner.jpg" height="100%" /></div>
+                <div class="product-info">
+                    <h3 class="product-title">Signature Dinner Experience</h3>
+                    <p class="product-description">Multi-course tasting menu crafted with seasonal ingredients and premium techniques. Perfect for intimate gatherings.</p>
+                    <div class="product-price">From ฿9,900 /per Couple</div>
+                    <a href="assets/pdf/Savor Uniquely Crafted Culinary Experience with Your Private Chef 2025.pdf" target="_blank" class="shop-link">Download Brochure</a>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+                <div class="product-image"><img src="assets/img/private-cooking-class.png" height="100%" /></div>
+                <div class="product-info">
+                    <h3 class="product-title">Private Cooking Classes</h3>
+                    <p class="product-description">Learn professional techniques in the comfort of your home. Personalized instruction for all skill levels.</p>
+                    <div class="product-price">From ฿1,500 /Half-Day Class</div>
+                    <a href="https://kinthai.in.th/Classes/?v=1ee6ac75" target="_blank" class="shop-link">View Offer</a>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card">
+                <div class="product-image"><img src="assets/img/meal-prep-hua-hin.jpg" height="100%" /></div>
+                <div class="product-info">
+                    <h3 class="product-title">Premium Meal Prep Service</h3>
+                    <p class="product-description">Chef-prepared meals delivered weekly. Nutritious, delicious, and ready to enjoy. Customizable to dietary preferences.</p>
+                    <div class="product-price">From ฿10,000 /week</div>
+                    <a href="https://kinthai.in.th/meal-prep-delivery-hua-hin.html" target="_blank" class="shop-link">View Offer</a>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="product-card">
+                <div class="product-image"><img src="assets/img/facebook-group-cover-1640x856-2.png" height="100%" /></div>
+                <div class="product-info">
+                    <h3 class="product-title">Notes from a Private Chef</h3>
+                    <p class="product-description">A private space for chefs and aspiring chefs to go beyond the book. Ask questions, get support, and follow the real behind-the-scenes world of the private chef life — from bookings to burnout, and everything in between.</p>
+                    <div class="product-price">฿650</div>
+                    <a href="https://www.facebook.com/groups/notes.private.chef" target="_blank" class="shop-link">View Group</a>
+                    <a href="https://wa.me/660993530593?text=Hi!%20I%E2%80%99m%20interested%20in%20your%20Facebook Group: Notes from a Private Chef - (฿650 - one time access pass | lifetime updates)" target="_blank" class="shop-link">Order</a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <footer class="footer">
+            <p>Experience culinary excellence • <a href="https://www.facebook.com/kinthai.personal.chef/" target="_blank">Visit our Facebook Page</a></p>
+            <p>Contact us for custom orders and private events</p>
+        </footer>
+    </div>
+</body>
+</html>
