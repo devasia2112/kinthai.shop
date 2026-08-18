@@ -1,2 +1,2 @@
-# kinthai.shop
-Kinthai Private Chef Shop
+# store.kinthai.in.th
+Kinthai Private Chef Store
